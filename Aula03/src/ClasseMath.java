@@ -6,10 +6,10 @@ public class ClasseMath {
 
         System.out.println("Calcular retângulo");
 
-        System.out.print("Digite o valor da largura: ");
+        System.out.print("Digite a largura: ");
         double largura = ler.nextDouble();
         
-        System.out.print("Digite o valor da altura: ");
+        System.out.print("Digite a altura: ");
         double altura = ler.nextDouble();
 
         double perimetro = largura * 2 + altura * 2;
