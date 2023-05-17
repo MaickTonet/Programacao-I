@@ -6,7 +6,9 @@ public class Conta {
     private double saldo;
 
     public Conta(int numero, String cliente) {
-
+        this.numero = numero;
+        this.cliente = cliente;
+        this.saldo = 0f;
     }
 
     public Conta(int numero, String cliente, double saldo) {
@@ -17,13 +19,16 @@ public class Conta {
 
     public void deposito(double saldo) {
         this.saldo += saldo;
+
+        System.out.println("O saldo foi realizado");
     }
 
     public void saque(double saldo) {
         if(this.saldo >= saldo) {
             this.saldo -= saldo;
+            System.out.println("O saque foi realizado");
         } else {
-            System.out.println("Saldo insuficiente");
+            System.out.println("O saldo é insuficiente para realizar o saque desejado");
         }
     }
 
