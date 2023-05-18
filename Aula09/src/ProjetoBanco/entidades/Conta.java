@@ -19,15 +19,15 @@ public class Conta {
 
     public void deposito(double saldo) {
         this.saldo += saldo;
-        System.out.println("O saldo foi realizado");
+        System.out.println("O deposito foi realizado");
     }
 
     public void saque(double saldo) {
-        if(this.saldo >= saldo) {
-            this.saldo -= saldo;
-            System.out.println("O saque foi realizado");
+        if(saldo + 5.0f > this.saldo) {
+            System.out.println("O saldo é isuficiente para realizar o saque desejado");
         } else {
-            System.out.println("O saldo é insuficiente para realizar o saque desejado");
+            this.saldo = this.saldo - saldo - 5.0f;
+            System.out.println("O saque foi realizado");
         }
     }
 
