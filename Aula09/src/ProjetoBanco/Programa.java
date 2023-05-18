@@ -8,11 +8,10 @@ public class Programa {
 
         System.out.print("Informe o número da conta: ");
         int numero = teclado.nextInt();
-
+        
         System.out.print("Informe o nome do cliente: ");
-        String cliente = teclado.nextLine();
-        teclado.nextLine();
-
+        String cliente =  teclado.next();
+                
         System.out.print("Será realizado um depósito inicial? ");
         char op = teclado.next().charAt(0);
 

@@ -19,7 +19,6 @@ public class Conta {
 
     public void deposito(double saldo) {
         this.saldo += saldo;
-
         System.out.println("O saldo foi realizado");
     }
 
