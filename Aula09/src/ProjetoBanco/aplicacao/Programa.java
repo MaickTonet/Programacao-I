@@ -1,6 +1,7 @@
 package ProjetoBanco.aplicacao;
-import java.util.Scanner;
 
+import java.util.Scanner;
+import ProjetoBanco.entidades.Cliente;
 import ProjetoBanco.entidades.Conta;
 
 public class Programa {
@@ -11,8 +12,19 @@ public class Programa {
         System.out.print("Informe o número da conta: ");
         int numero = Integer.parseInt(teclado.nextLine());
         
-        System.out.print("Informe o nome do cliente: ");
-        String cliente =  teclado.nextLine();
+        System.out.print("Informe o nome: ");
+        String nome = teclado.nextLine();
+
+        System.out.print("Informe o endereço: ");
+        String endereco = teclado.nextLine();
+
+        System.out.print("Informe o telefone: ");
+        String telefone = teclado.nextLine();
+
+        System.out.print("Informe a data de nascimento: ");
+        String dataNascimento = teclado.nextLine();
+
+        Cliente cliente = new Cliente(nome, endereco, telefone, dataNascimento);
                 
         System.out.print("Será realizado um depósito inicial? ");
         char op = teclado.next().charAt(0);

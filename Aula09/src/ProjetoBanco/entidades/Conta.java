@@ -2,19 +2,23 @@ package ProjetoBanco.entidades;
 
 public class Conta {
     private int numero;
-    private String cliente;
+    private Cliente cliente = new Cliente();
     private double saldo;
 
-    public Conta(int numero, String cliente) {
+    public Conta(int numero, Cliente cliente) {
         this.numero = numero;
         this.cliente = cliente;
         this.saldo = 0f;
     }
 
-    public Conta(int numero, String cliente, double saldo) {
+    public Conta(int numero, Cliente cliente, double saldo) {
         this.numero = numero;
         this.cliente = cliente;
         this.saldo = saldo;
+    }
+
+    public String getCliente() { 
+        return cliente.getNome();
     }
 
     public void deposito(double saldo) {
@@ -33,6 +37,8 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Conta: " + this.numero + " - Cliente: " + this.cliente + " - Saldo: " + String.format("R$ %.2f", saldo);
+        return "Conta: " + this.numero + " - Cliente: " + cliente.getNome() + "\nEndereço: " + cliente.getEndereco() +
+                " - Telefone: " + cliente.getTelefone() + "\nData de nascimento: " + cliente.getDataNascimento() + 
+                " - Saldo: " + String.format("R$ %.2f", saldo);
     }
 }
