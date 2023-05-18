@@ -1,5 +1,7 @@
-package ProjetoBanco;
+package ProjetoBanco.aplicacao;
 import java.util.Scanner;
+
+import ProjetoBanco.entidades.Conta;
 
 public class Programa {
     public static void main(String[] args) {

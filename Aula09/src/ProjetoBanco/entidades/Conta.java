@@ -1,4 +1,4 @@
-package ProjetoBanco;
+package ProjetoBanco.entidades;
 
 public class Conta {
     private int numero;
