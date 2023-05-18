@@ -9,13 +9,15 @@ public class Programa {
         System.out.println("** Projeto: Banco **");
 
         System.out.print("Informe o número da conta: ");
-        int numero = teclado.nextInt();
+        int numero = Integer.parseInt(teclado.nextLine());
         
         System.out.print("Informe o nome do cliente: ");
-        String cliente =  teclado.next();
+        String cliente =  teclado.nextLine();
                 
         System.out.print("Será realizado um depósito inicial? ");
         char op = teclado.next().charAt(0);
+
+        Conta conta;
 
         if (Character.toUpperCase(op) == 'S') {
 
@@ -24,58 +26,26 @@ public class Programa {
             double deposito = teclado.nextDouble();
             System.out.println();
 
-            Conta conta1 = new Conta(numero, cliente, deposito);
-
-            System.out.println("A conta foi criada");
-            System.out.println(conta1);
-            System.out.println();
-
-            System.out.print("Informe o valor a ser depositado: ");
-            deposito = teclado.nextDouble();
-            System.out.println();
-
-            conta1.deposito(deposito);
-
-            System.out.println(conta1);
-            System.out.println();
-
-            System.out.print("Informe o valor a ser sacado: ");
-            double saque = teclado.nextDouble();
-            System.out.println();
-
-            conta1.saque(saque);
-
-            System.out.println(conta1);
-            System.out.println();
-
-        } else if (Character.toUpperCase(op) == 'N') {
-            Conta conta1 = new Conta(numero, cliente);
-
-            System.out.println();
-            System.out.println("A conta foi criada");
-            System.out.println(conta1);
-
-            System.out.print("Informe o valor a ser depositado: ");
-            double deposito = teclado.nextDouble();
-            System.out.println();
-
-            conta1.deposito(deposito);
-
-            System.out.println(conta1);
-            System.out.println();
-
-            System.out.print("Informe o valor a ser sacado: ");
-            double saque = teclado.nextDouble();
-            System.out.println();
-
-            conta1.saque(saque);
-
-            System.out.println(conta1);
-            System.out.println();    
+            conta = new Conta(numero, cliente, deposito);
 
         } else {
-            System.out.println("Operação invalida!");
+            conta = new Conta(numero, cliente);
         }
+
+        System.out.println("A conta foi criada");
+        System.out.println();
+
+        System.out.print("Informe o valor a ser depositado: ");
+        double valor = teclado.nextDouble();
+        conta.deposito(valor);
+        System.out.println();
+
+        System.out.print("Informe o valor a ser sacado: ");
+        valor = teclado.nextDouble();
+        conta.saque(valor);
+
+        System.out.println();
+        System.out.println(conta);
 
         teclado.close();
     }
