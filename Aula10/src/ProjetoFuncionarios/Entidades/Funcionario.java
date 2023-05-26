@@ -19,7 +19,7 @@ public class Funcionario {
         return nome;
     }
 
-    public double getCSalario() {
+    public double getSalario() {
         return salario;
     }
 

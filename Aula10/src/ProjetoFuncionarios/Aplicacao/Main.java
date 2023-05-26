@@ -36,9 +36,9 @@ public class Main {
                 System.out.print("Valor do aumento: ");
                 double aumento = scanner.nextDouble();
 
-                i.setSalario(i.getCSalario() + i.getCSalario() * aumento / 100); // Calculo do aumento do salário
+                i.setSalario(i.getSalario() + i.getSalario() * aumento / 100); // Calculo do aumento do salário
                 System.out.println("Aumento realizado\n");
-                System.out.println("Novo salário: R$" + i.getCSalario());
+                System.out.println("Novo salário: R$" + i.getSalario());
             }
         }
         scanner.close();
