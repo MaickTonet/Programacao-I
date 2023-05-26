@@ -12,3 +12,4 @@ Os assuntos abordados até agora nas aulas foram:
 5. Manipulação de vetores e matrizes
 6. Manipulação de strings
 7. Introdução a orientação a objetos
+8. Estruturas de alocação dinâmica (listas, pilhas, filas etc.)
