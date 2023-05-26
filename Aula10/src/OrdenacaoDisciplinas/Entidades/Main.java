@@ -6,14 +6,14 @@ public class Main {
     public static void main(String[] args) {
         List<Disciplina> disciplinas = new ArrayList<Disciplina>(2);
 
-       for (int i = 0; i < 5; i++) {
-            int codigo = (int) (1 + Math.random() * (110 - 1));
+       for (int i = 0; i < 3; i++) {
+            int codigo = (int) (1 + Math.random() * (20));
 
-            String nome = "Disciplina " + (int) (1 + Math.random() * (110 - 1));
+            String nome = "Disciplina " + (i + 1);
 
-            int fase = (int) (1 + Math.random() * (110 - 1));
+            int fase = (int) (1 + Math.random() * (8));
 
-            int cargaHoraria = (int) (1 + Math.random() * (110 - 1));
+            int cargaHoraria = (int) (1 + Math.random() * (100));
 
            disciplinas.add(new Disciplina(codigo, nome, fase, cargaHoraria));
         }

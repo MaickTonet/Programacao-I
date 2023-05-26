@@ -36,6 +36,6 @@ public class Disciplina implements Comparable <Disciplina> {
 
     @Override
     public String toString() {
-        return "Código: " + codigo + " - Nome: " + nome + " - Fase: " + fase + " - Carga Horária: " + cargaHorario + "\n";
+        return "Código: " + codigo + " - Nome: " + nome + " - Fase: " + fase + "º - Carga Horária: " + cargaHorario + "h\n";
     }   
 }
