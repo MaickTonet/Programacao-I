@@ -1,4 +1,3 @@
-package Exercicios.ExercicioPilhas;
 import java.util.Stack;
 /*
  Escreva um programa que leia 10 números.  Para cada número lido, verifique e codifique de acordo com as regras a seguir:
