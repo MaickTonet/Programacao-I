@@ -19,11 +19,11 @@ public class Pessoa implements Comparable <Pessoa> {
         this.codigo = codigo;
     }
 
-    public String getNome() {
+    public String nome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    public void nome(String nome) {
         this.nome = nome;
     }
 
@@ -37,11 +37,11 @@ public class Pessoa implements Comparable <Pessoa> {
 
     @Override
     public int compareTo(Pessoa p) {
-        return this.nome.compareTo(p.getNome());
+        return this.nome.compareTo(p.nome());
     }
 
     @Override
     public String toString() {
-        return "Pessoa [codigo=" + codigo + ", nome=" + nome + ", profissao=" + profissao + "]";
+        return "Pessoa: Codigo: " + codigo + " - Nome: " + nome + " - Profissao: " + profissao + "";
     }
 }

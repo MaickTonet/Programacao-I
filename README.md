@@ -13,3 +13,5 @@ Os assuntos abordados até agora nas aulas foram:
 6. Manipulação de strings
 7. Introdução a orientação a objetos
 8. Estruturas de alocação dinâmica (listas, pilhas, filas etc.)
+9. Excecções
+10. Manipulações de arquivos
