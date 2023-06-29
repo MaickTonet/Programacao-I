@@ -5,12 +5,12 @@ public class Financiamento {
     private double entrada;
     private int parcelas;
 
-    public Financiamento(double valorTotal, double entrada, int parcelas) {
+    public Financiamento(double valorTotal, double entrada, int parcelas) { // Construtor
 
-        if (entrada < valorTotal * 0.2) {
-            throw new RuntimeException("A entrada deve ser pelo menos 20% do valor total");
-        } else if (parcelas < 6) {
-            throw new RuntimeException("O número mínimo de parcelas deve ser 6");
+        if (entrada < valorTotal * 0.2) { // Verifica se a entrada é menor que 20%
+            throw new RuntimeException("A entrada deve ser pelo menos 20% do valor total"); // Retorna a exceção para a função main
+        } else if (parcelas < 6) { // Verifica se a quantidade de parcelas é menor que 6
+            throw new RuntimeException("O número mínimo de parcelas deve ser 6"); // Retorna a exceção para a função main
         }
 
         this.valorTotal = valorTotal;
@@ -42,7 +42,7 @@ public class Financiamento {
         this.parcelas = parcelas;
     }
 
-    public double prestacao() {
+    public double prestacao() { // Calcula o valor das prestações
         return (valorTotal - entrada) / parcelas;
     }
 

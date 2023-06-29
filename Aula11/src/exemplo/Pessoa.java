@@ -36,12 +36,12 @@ public class Pessoa implements Comparable <Pessoa> {
     }
 
     @Override
-    public int compareTo(Pessoa p) {
+    public int compareTo(Pessoa p) { // Ordena a lista por ordem alfabética (Gerado pelo vsCode)
         return this.nome.compareTo(p.nome());
     }
 
     @Override
-    public String toString() {
+    public String toString() { // Muda a exibição padrão do objeto pessoa
         return "Pessoa: Codigo: " + codigo + " - Nome: " + nome + " - Profissao: " + profissao + "";
     }
 }

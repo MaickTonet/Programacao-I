@@ -41,7 +41,7 @@ public class Pessoa implements Comparable <Pessoa> {
     }
 
     @Override
-    public int compareTo(Pessoa o) {
+    public int compareTo(Pessoa o) { // Ordena as pessoas por orden alfabética
         return this.nome.compareTo(o.getNome());
     }
 }
