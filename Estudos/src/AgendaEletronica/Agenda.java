@@ -1,4 +1,4 @@
-package AgendaEletronica;
+package agendaEletronica;
 
 public class Agenda implements Comparable <Agenda> {
     private int codigo;

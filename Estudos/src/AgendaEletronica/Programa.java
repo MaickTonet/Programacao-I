@@ -1,4 +1,4 @@
-package AgendaEletronica;
+package agendaEletronica;
 
 import java.util.ArrayList;
 import java.util.List;
